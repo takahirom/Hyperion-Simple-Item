@@ -2,7 +2,7 @@ package com.github.takahirom.hyperion.plugin.simpleitem.sample;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import takahirom.github.com.hyperion.plugin.startactivity.R;
+import com.github.takahirom.hyperion.plugin.simpleitem.R;
 
 public class MainActivity extends AppCompatActivity {
 
