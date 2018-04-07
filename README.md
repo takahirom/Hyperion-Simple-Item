@@ -1,9 +1,14 @@
 # Hyperion-Simple-Item
 [![Release](https://jitpack.io/v/takahirom/Hyperion-Simple-Item.svg)](https://jitpack.io/#takahirom/Hyperion-Simple-Item)
 
-You can add item to hyperion menu
+You can add item to [Hyperion-Android](https://github.com/willowtreeapps/Hyperion-Android) menu.
+
+If you already have DebugMenu in your app, you will be able to go to that place.
 
 ![image](https://user-images.githubusercontent.com/1386930/38453561-76809eb8-3a92-11e8-827f-07124953caeb.png)
+
+
+# Usage
 
 app/src/**debug**/AndroidManifest.xml
 
@@ -25,8 +30,6 @@ public class DebugApp extends App {
   @Override public void onCreate() {
     super.onCreate();
 ```
-
-# Usage
 
 
 ```
@@ -58,6 +61,6 @@ Step 2. Add the dependency
 
 ```groovy
 dependencies {
-        compile 'com.github.takahirom:Hyperion-Simple-Item:0.1.0'
+    debugImplementation 'com.github.takahirom:Hyperion-Simple-Item:0.1.0'
 }
 ```
