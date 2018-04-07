@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="?attr/selectableItemBackground"
+  android:minHeight="131dp"
+  android:padding="@dimen/hype_plugin_padding"
+  >
+
+  <ImageView
+    android:id="@+id/image"
+    android:layout_width="@dimen/hype_plugin_icon_size"
+    android:layout_height="@dimen/hype_plugin_icon_size"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:tint="@color/hype_plugin_color_selector"
+    tools:src="@android:drawable/alert_light_frame"
+    />
+  <TextView
+    android:id="@+id/title"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginLeft="28dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginStart="28dp"
+    app:layout_goneMarginStart="0dp"
+    app:layout_goneMarginLeft="0dp"
+    android:duplicateParentState="true"
+    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+    app:layout_constraintBottom_toTopOf="@id/text"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_chainStyle="spread"
+    app:layout_constraintStart_toEndOf="@id/image"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_chainStyle="packed"
+    tools:text="title"
+    />
+  <TextView
+    android:id="@+id/text"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginRight="8dp"
+    android:duplicateParentState="true"
+    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="@id/title"
+    app:layout_constraintTop_toBottomOf="@id/title"
+    tools:text="text\nThis can long text.This can long text.This can long text.This can long text.This can long text.This can long text."
+    />
+</android.support.constraint.ConstraintLayout>
