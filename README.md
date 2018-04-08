@@ -5,8 +5,7 @@ You can add item to [Hyperion-Android](https://github.com/willowtreeapps/Hyperio
 
 If you already have DebugMenu in your app, you will be able to go to that place.
 
-![image](https://user-images.githubusercontent.com/1386930/38453561-76809eb8-3a92-11e8-827f-07124953caeb.png)
-
+![image](https://user-images.githubusercontent.com/1386930/38463387-cb57a48e-3b34-11e8-993a-cc96ef9e6094.png)
 
 # Usage
 
