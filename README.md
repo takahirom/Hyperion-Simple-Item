@@ -28,20 +28,17 @@ app/src/**debug**/java/.../DebugApp.java
 public class DebugApp extends App {
   @Override public void onCreate() {
     super.onCreate();
-```
 
-
-```
-final SimpleItem item = new SimpleItem.Builder("all: this is the title")
-        .text("this is the text")
-        .image(R.drawable.ic_list_black_24dp)
-        .clickListener(new View.OnClickListener() {
-          @Override public void onClick(View v) {
-            Toast.makeText(App.this, "click",Toast.LENGTH_SHORT).show();
-          }
-        })
-        .build();
-SimpleItemHyperionPlugin.addItem(item);
+    final SimpleItem item = new SimpleItem.Builder("all: this is the title")
+            .text("this is the text")
+            .image(R.drawable.ic_list_black_24dp)
+            .clickListener(new View.OnClickListener() {
+              @Override public void onClick(View v) {
+                Toast.makeText(App.this, "click",Toast.LENGTH_SHORT).show();
+              }
+            })
+            .build();
+    SimpleItemHyperionPlugin.addItem(item);
 ```
 
 # Download
