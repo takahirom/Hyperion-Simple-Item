@@ -10,7 +10,7 @@ public class DebugApp extends App {
   @Override public void onCreate() {
     super.onCreate();
     final SimpleItem onlyTitleItem = new SimpleItem.Builder()
-        .title("only title: title")
+        .text("this test description")
         .clickListener(new View.OnClickListener() {
           @Override public void onClick(View v) {
             Toast.makeText(DebugApp.this, "click 1",Toast.LENGTH_SHORT).show();
