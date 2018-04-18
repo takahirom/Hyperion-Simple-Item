@@ -6,7 +6,7 @@ import android.support.annotation.Nullable;
 import android.view.View;
 
 public class SimpleItem {
-  @NonNull public final String title;
+  @Nullable public final String title;
   @Nullable public final String text;
   @Nullable public final View.OnClickListener clickListener;
   @DrawableRes public final int image;
@@ -24,8 +24,12 @@ public class SimpleItem {
     private View.OnClickListener clickListener;
     private int image;
 
-    public Builder(@NonNull String title) {
+    public Builder() {
+    }
+
+    public Builder title(String title) {
       this.title = title;
+      return this;
     }
 
     public Builder text(String text) {

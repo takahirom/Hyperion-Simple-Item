@@ -31,6 +31,7 @@ class SimpleItemListAdapter
   @Override public void onBindViewHolder(@NonNull final SimpleItemViewHolder holder, int position) {
     final SimpleItem item = items.get(position);
     holder.title.setText(item.title);
+    holder.title.setVisibility(item.title == null ? View.GONE : View.VISIBLE);
     holder.text.setText(item.text);
     holder.text.setVisibility(item.text == null ? View.GONE : View.VISIBLE);
     holder.image.setImageResource(item.image);
