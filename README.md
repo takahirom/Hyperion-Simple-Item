@@ -29,8 +29,7 @@ public class DebugApp extends App {
   @Override public void onCreate() {
     super.onCreate();
 
-    final SimpleItem item = new SimpleItem.Builder()
-            .title("all: this is the title")
+    final SimpleItem item = new SimpleItem.Builder("all: this is the title")
             .text("this is the text")
             .image(R.drawable.ic_list_black_24dp)
             .clickListener(new View.OnClickListener() {
