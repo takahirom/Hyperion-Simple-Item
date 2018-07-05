@@ -21,10 +21,10 @@ android {
 dependencies {
   implementation fileTree(dir: 'libs', include: ['*.jar'])
   implementation 'com.android.support:appcompat-v7:27.1.0'
-  debugImplementation 'com.willowtreeapps.hyperion:hyperion-core:0.9.21'
-  debugImplementation 'com.willowtreeapps.hyperion:hyperion-measurement:0.9.21'
-  debugImplementation project(":hyperion-simple-item")
-//  debugImplementation 'com.github.takahirom:Hyperion-Simple-Item:0.1.0'
+  debugImplementation 'com.willowtreeapps.hyperion:hyperion-core:0.9.23'
+  debugImplementation 'com.willowtreeapps.hyperion:hyperion-measurement:0.9.23'
+//  debugImplementation project(":hyperion-simple-item")
+  debugImplementation 'com.github.takahirom:Hyperion-Simple-Item:0.4.0'
 
   implementation "com.android.support.constraint:constraint-layout:1.1.0-beta5"
   testImplementation 'junit:junit:4.12'
