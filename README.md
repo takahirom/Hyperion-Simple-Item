@@ -58,6 +58,6 @@ Step 2. Add the dependency
 
 ```groovy
 dependencies {
-    debugImplementation 'com.github.takahirom:Hyperion-Simple-Item:0.1.0'
+    debugImplementation 'com.github.takahirom:Hyperion-Simple-Item:latest.release.here'
 }
 ```
