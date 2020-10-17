@@ -22,6 +22,7 @@ class SimpleItemModule extends PluginModule {
       @NonNull ViewGroup parent) {
     final RecyclerView recyclerView = new RecyclerView(parent.getContext());
     recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+    recyclerView.setNestedScrollingEnabled(false);
     final SimpleItemListAdapter adapter = new SimpleItemListAdapter(layoutInflater);
     recyclerView.setAdapter(adapter);
     final DividerItemDecoration dividerItemDecoration =
